@@ -31,7 +31,7 @@ const persone = [
     },
 ];
 
-//creo una funzione dove visualizzo tutti i nomi in maiuscolo
+//SNACK 2.1: creo una funzione dove visualizzo tutti i nomi in maiuscolo
 
 const uppercasePersone = persone.map((elem) => {
     let nome_stud = elem.nome.toUpperCase();
@@ -41,4 +41,14 @@ const uppercasePersone = persone.map((elem) => {
 
 console.log(uppercasePersone);
 
+//SNACK 2.2: creo una lista di studenti con voti >70
 
+const voti70 = persone.filter((item) => {if(item.grado > '70') return true});
+
+console.log(voti70);
+
+//SNACK 2.3: creo una lista di studenti con voti >70 e quelli che hanno un ID > 120
+
+const id120 = persone.filter((item) => {if(item.grado > '70' && item.id > '120') return true});
+
+console.log(id120);
